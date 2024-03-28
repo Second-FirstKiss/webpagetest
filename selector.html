@@ -39,6 +39,31 @@
         p:first-child {
             font-weight: bold;
         }
+        /* 전체 선택자 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 태그 선택자 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 아이디 선택자 */
+        #unique-id {
+            font-weight: bold;
+        }
+
+        /* 클래스 선택자 */
+        .important {
+            color: red;
+        }
+
+        /* 여러 후손 선택자 */
+        div p span {
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +96,23 @@
     <div>
         <p>첫 번째 <span>문장</span></p>
         <p>두 번째 문장</p>
+    </div>
+    
+    <h2>전체 선택자 예제</h2>
+    <div>이건 전체 선택자?</div>
+
+    <h2>태그 선택자 예제</h2>
+    <p>이건 태그 선택자</p>
+
+    <h2>아이디 선택자 예제</h2>
+    <div id="unique-id">이건 아이디 선택자</div>
+
+    <h2>클래스 선택자 예제</h2>
+    <p class="important">이거슨 클래스 선택자</p>
+
+    <h2>여러 후손 선택자 예제</h2>
+    <div>
+        <p><span>이것은 여러 후손 선택자</span></p>
     </div>
 </body>
 </html>

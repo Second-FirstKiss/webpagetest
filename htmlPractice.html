@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 예제</title>
+</head>
+<body>
+    <header>
+        <h1>제목이 없는 제목은 언타이틀, 영어로는 무제</h1>
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li> <!-- 홈 페이지로 이동하는 링크 -->
+                <li><a href="#">소개</a></li> <!-- 사이트 소개 페이지로 이동하는 링크 -->
+                <li><a href="#">서비스</a></li> <!-- 서비스 페이지로 이동하는 링크 -->
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>이건 섹션의 h2</h2>
+        <article>
+            <h3>첫 번째 h3</h3>
+            <p>어쩌구가 저쩌구를 해서...</p> <!-- 첫 번째 게시물의 내용 -->
+        </article>
+        <article>
+            <h3>두 번째 h3</h3>
+            <p>어절씨구가 되었다...</p> <!-- 두 번째 게시물의 내용 -->
+        </article>
+    </section>
+    
+    <footer>
+        <p>&copy; p태그 뒤에 & copy;를 붙이면 저작권표시가되지.</p> <!-- 저작권 표시 -->
+    </footer>
+
+    <!-- 글자태그 -->
+    <h1>제목 태그</h1> <!-- 페이지의 주요 제목 -->
+    <p>본문 단락 태그</p> <!-- 본문 텍스트를 단락으로 나누는 태그 -->
+    <a href="https://www.example.com">앵커 태그</a> (하이빠링꾸) <!-- 다른 웹페이지로 이동하는 하이퍼링크 -->
+
+    <!-- 목록태그 -->
+    <h2>기본 목록 태그</h2>
+    <ul>
+        <li>땡땡의 모험</li> <!-- 비순서 목록의 항목 -->
+        <li>틴틴의 모험?</li> <!-- 비순서 목록의 항목 -->
+        <li>땡떙은 u1</li> <!-- 비순서 목록의 항목 -->
+    </ul>
+    
+    <h2>순서 목록 태그</h2>
+    <ol>
+        <li>첫 번째 앨리스는 선홍의 검사</li> <!-- 순서 목록의 첫 번째 항목 -->
+        <li>두 번째 앨리스는 푸른 음악가</li> <!-- 순서 목록의 두 번째 항목 -->
+        <li>세 번째 순서 태그는 o1이라는 사실</li> <!-- 순서 목록의 세 번째 항목 -->
+    </ol>
+    
+    <h2>중첩 목록 태그</h2>
+    <ul>
+        <li>중첩하기 위해선
+            <ul>
+                <li>o1을 또쓰면</li> <!-- 과일 목록의 항목 -->
+                <li>된단다</li> <!-- 과일 목록의 항목 -->
+            </ul>
+        </li>
+        <li>바로
+            <ul>
+                <li>이렇게</li> <!-- 채소 목록의 항목 -->
+                <li>말이지</li> <!-- 채소 목록의 항목 -->
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 테이블태그 -->
+    <table border="1">
+        <caption>회원 정보</caption> <!-- 테이블에 대한 설명 -->
+        <tr>
+            <th>이름</th> <!-- 테이블 헤더의 열 제목 -->
+            <th>나이</th> <!-- 테이블 헤더의 열 제목 -->
+        </tr>
+        <tr>
+            <td>홍길동</td> <!-- 첫 번째 행의 이름 -->
+            <td>30세</td> <!-- 첫 번째 행의 나이 -->
+        </tr>
+        <tr>
+            <td>황금독수리온세상을놀라게하다</td> <!-- 두 번째 행의 이름 -->
+            <td>25세</td> <!-- 두 번째 행의 나이 -->
+        </tr>
+    </table>
+
+    <!-- 입력 양식 태그 -->
+    <form action="/submit" method="post">
+        <label for="username">사용자 이름:</label> <!-- 사용자 이름 입력 필드 -->
+        <input type="text" id="username" name="username"><br><br>
+        
+        <label for="password">비밀번호:</label> <!-- 비밀번호 입력 필드 -->
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="email">이메일:</label> <!-- 이메일 입력 필드 -->
+        <input type="email" id="email" name="email"><br><br>
+        
+        <input type="submit" value="post 형식의 제출"> <!-- 제출 버튼 -->
+    </form>
+
+    <!-- 미디어 태그 -->
+    <h2>미디어 태그</h2>
+    <img src="example.jpg" alt="예시 이미지"> <!-- 이미지 태그 -->
+    <video width="320" height="240" controls>
+        <source src="example.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 공간 분할 태그 -->
+    <section>
+        <h2>시맨틱 태그</h2>
+        <header>
+            <h3>header 영역</h3> <!-- 웹 페이지의 헤더 -->
+        </header>
+        <article>
+            <h3>본문 영역 영어로는 article</h3> <!-- 웹 페이지의 본문 -->
+            <p>이거슨 내용임니다...</p> <!-- 웹 페이지의 본문 내용 -->
+        </article>
+        <footer>
+            <h3>footer 영역</h3> <!-- 웹 페이지의 푸터 -->
+        </footer

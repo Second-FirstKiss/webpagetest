@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 종류별 예제</title>
+    <style>
+        /* 기본 선택자 */
+        p {
+            color: blue;
+        }
+
+        /* 속성 선택자 */
+        [class="highlight"] {
+            background-color: yellow;
+        }
+
+        /* 후손 선택자 */
+        div span {
+            color: red;
+        }
+
+        /* 자손 선택자 */
+        div > span {
+            font-weight: bold;
+        }
+
+        /* 반응 선택자 */
+        a:hover {
+            color: red;
+        }
+
+        /* 상태 선택자 */
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        /* 구조 선택자 */
+        p:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>기본 선택자</h2>
+    <p>요건 기본 선택자</p>
+    <div>
+        <p>요것도 기본 선택자</p>
+    </div>
+
+    <h2>속성 선택자</h2>
+    <p class="highlight">이건 속성 선택자</p>
+    <div>
+        <span class="highlight">이것도 속성 선택자</span>
+    </div>
+
+    <h2>후손 선택자</h2>
+    <div>
+        <p>부모 요소</p>
+        <span>이건 후손 선택자</span>
+        <p><span>이건 후손이 아니라 자손 선택자</span></p>
+    </div>
+
+    <h2>반응 선택자</h2>
+    <a href="#">마우스를 호버하면</a>
+
+    <h2>상태 선택자</h2>
+    <input type="text" placeholder="여기를 클릭하세요">
+
+    <h2>구조 선택자</h2>
+    <div>
+        <p>첫 번째 <span>문장</span></p>
+        <p>두 번째 문장</p>
+    </div>
+</body>
+</html>
